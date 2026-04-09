@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanjana Damecha | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #1e1e2f, #3a3a5f);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255,255,255,0.2);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sanjana Damecha</h1>
+  <p>B.Tech CSE Student | Future Developer</p>
+</header>
+
+<section>
+  <div class="card" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student currently studying at MIT Vishwaprayag University, Solapur.</p>
+  </div>
+
+  <div class="card" data-aos="fade-right">
+    <h2>Education</h2>
+    <p>10th - Little Flower Convent High School</p>
+    <p>12th - Rakhmabai Hatture Jr College</p>
+    <p>B.Tech CSE - MITVPU (1st Year)</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <p>C Programming | Problem Solving | Communication</p>
+  </div>
+
+  <div class="card" data-aos="fade-left">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sanjana Damecha</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
